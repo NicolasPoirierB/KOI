@@ -22,6 +22,10 @@ export class Player {
 		this.hand = [];
 	}
 
+	draw() {
+		this.hand.push(WHITE_CARD_DECK.draw());
+	}
+
 	/**
 	 * Loops through the hand of the player. If a player has cards with the same value,
 	 * he can discard them to heal himself.
@@ -89,7 +93,7 @@ export class Player {
 		let playerHasMoved = false;
 		
 		if (this.location === location) {
-			console.warn("Un joueur ne peut pas se déplacer à un endroit ou il est déjà.")
+			console.warn("Un joueur ne peut pas se déplacer à un endroit ou il est déjà.");
 		} else {
 			this.location = location;
 			playerHasMoved = true;

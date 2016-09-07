@@ -10,14 +10,12 @@ var _createClass = function () { function defineProperties(target, props) { for 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 /** Card deck */
-
 var CardDeck = exports.CardDeck = function () {
 
 	/**
   * Creates a card deck from an array of cards.
   * @param {Array} cardList - An array of cards.
   */
-
 	function CardDeck(cardList) {
 		_classCallCheck(this, CardDeck);
 
